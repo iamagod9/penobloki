@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Акции</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.all.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="header container">
+				<div class="slog_sr">
+					<img class="logo" src="img/logo.png">
+				</div>
+
+				<div class="serch_header">
+					<input class="search_block" type="search" name="text" placeholder="Поиск" size="20" maxlength="50" autocomplete="off">
+				</div>
+
+				<div class="connect_with_company">
+					<img class="icons_telephone" src="img/icons-telephone-call.png">
+					<p class="number_telephone">+7 (985) 234 53 23</p>
+				</div>
+
+				<div class="connect_with_company">
+					<img class="icons_reg" src="img/locked.png">
+					<? echo !isset($_COOKIE['id']) ? "<a class='log_in' href='login.php'>Вход</a>" : "<a class='log_in' href='logout.php'>Выйти</a>"; ?>
+					<!-- <a class="log_in" href="login.php">Вход</a> -->
+				</div>
+			</div>
+
+			<div class="menu_header">
+				<div class="menu_block">
+					<a class="menu_items" href="index.php">Главная</a> 
+				</div>
+
+				<div class="menu_block">
+					<a class="menu_items" href="sale.php">Акции</a> 
+				</div>
+
+				<div class="menu_block">
+					<a class="menu_items" href="contact.php">Контакты</a> 
+				</div>
+
+				<div class="menu_block">
+					<a class="menu_items" href="#">Отзывы</a> 
+				</div>
+
+			</div>
+		</header>
+		
+		<div class="name_of_blocks_border">
+			<h2 class="name_of_blocks">Акции</h2>
+		</div>
+
+		<section class="blog-section">
+			<div class="container">
+				<div class="blog">
+					<div class="blog-width">
+						<div class="blog-item">
+							<div class="blog-img set-bg" data-setbg="img/sale/1.jpg"></div>
+							<div class="blog-content">
+								<h4>Скидка 5% на покупку кирпича RECKE BRICKEREI</h4>
+
+								<div class="blog-meta">
+									<span><i class="far fa-calendar"></i> 15 ноября 2020</span>
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<a href="" class="blog-readmore">Подробнее <i class="fas fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="blog-width">
+						<div class="blog-item">
+							<div class="blog-img set-bg" data-setbg="img/sale/2.jpg"></div>
+							<div class="blog-content">
+								<h4>Кирпич по выгодной цене</h4>
+
+								<div class="blog-meta">
+									<span><i class="far fa-calendar"></i> 15 ноября 2020</span>
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<a href="" class="blog-readmore">Подробнее <i class="fas fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="footer">
+			<div class="footer_block container">
+				<div class="footer_block_content_top">
+					<div class="footer_block_one">
+						<a class="zag_parametr_footer" href="#">О компании</a>
+						<a class="parametr_footer" href="#">Отзывы</a>
+						<a class="parametr_footer" href="#">О магазине</a>
+					</div>
+
+					<div class="footer_block_one">
+						<a class="zag_parametr_footer" href="#">Каталог</a>
+						<a class="parametr_footer" href="#">Бренды</a>
+						<a class="parametr_footer" href="#">Акции</a>
+						<a class="parametr_footer" href="#">Контакты</a>
+					</div>
+
+					<div class="footer_block_one">
+						<a class="zag_parametr_footer" href="#">Помощь</a>
+						<a class="parametr_footer" href="#">Оплата</a>
+						<a class="parametr_footer" href="#">Доставка</a>
+						<a class="parametr_footer" href="#">Самовывоз</a>
+						<a class="parametr_footer" href="#">Политика</a>
+					</div>
+
+					<div class="footer_block_contact">
+						<p class="ours_contact">Наши контакты</p>
+						<a class="block_contact" href="#"><img class="icons_footer" src="img/icons_telephone.png"> +7 (985) 234 53 23</a>
+						<a class="block_contact" href="#"><img class="icons_footer" src="img/message.png"> nirvana_brat@mail.ru</a>
+						<p class="block_contact"><img class="icons_footer" src="img/geo.png">401000, г.Кемерово, ул Павленко 1А</p>
+					</div>
+				</div>
+
+				<div class="footer_block_content_bottom">
+					<p class="copyright">2020 © Нирвана-всему голова,брат</p>
+					<p class="text_footer_bottom">SHELEPOVERT - продвижение сайта по трафику.</p>
+					<p class="text_footer_bottom"> Разработка интернет-магазина - Студия Varlasha</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
